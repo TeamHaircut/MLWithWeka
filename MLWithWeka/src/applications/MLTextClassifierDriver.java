@@ -17,7 +17,7 @@ public class MLTextClassifierDriver extends Application{
 	        StackPane root = new StackPane();
 	        root.getChildren().add(simple);
 	        
-	        Scene scene = new Scene(root, 300, 250);
+	        Scene scene = new Scene(root, 600, 350);
 	        
 	        primaryStage.setTitle("ML Text Classifier");
 	        primaryStage.setScene(scene);
