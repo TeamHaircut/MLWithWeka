@@ -21,6 +21,7 @@ public class MLTextClassifierDriver extends Application{
 	        
 	        primaryStage.setTitle("ML Text Classifier");
 	        primaryStage.setScene(scene);
+	        primaryStage.setResizable(false);
 	        primaryStage.show();
 	    }
 	 public static void main(String[] args) {
