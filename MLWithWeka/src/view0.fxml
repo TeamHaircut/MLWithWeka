@@ -11,7 +11,7 @@
          <children>
             <Label text="Prediction Model" />
             <ComboBox fx:id="modelCB" prefWidth="300.0" />
-            <Button fx:id="classifyBTN" mnemonicParsing="false" text="Classify" />
+            <Button fx:id="classifyBTN" mnemonicParsing="false" onAction="#classifyBTNAction" text="Classify" />
          </children>
       </HBox>
       <VBox alignment="CENTER" maxHeight="1200.0" maxWidth="1200.0" minHeight="200.0" minWidth="568.0" spacing="5.0" style="-fx-border-color: black;">
