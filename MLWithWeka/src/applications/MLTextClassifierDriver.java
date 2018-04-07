@@ -1,5 +1,6 @@
 package applications;
 
+import controllers.TextClassifierController;
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Node;
@@ -23,6 +24,7 @@ public class MLTextClassifierDriver extends Application{
 	        primaryStage.setScene(scene);
 	        primaryStage.setResizable(false);
 	        primaryStage.show();
+	        TextClassifierController.stage = primaryStage;
 	    }
 	 public static void main(String[] args) {
 	        launch(args);
