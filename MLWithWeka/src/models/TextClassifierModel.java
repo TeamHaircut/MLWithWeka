@@ -1,15 +1,8 @@
 package models;
 
-import java.io.IOException;
 import java.util.HashMap;
 import java.util.Map;
 
-import javafx.beans.property.ObjectProperty;
-import javafx.beans.property.SimpleObjectProperty;
-import javafx.beans.property.SimpleStringProperty;
-import javafx.beans.property.StringProperty;
-import javafx.collections.FXCollections;
-import javafx.collections.ObservableList;
 
 public class TextClassifierModel {
 	
