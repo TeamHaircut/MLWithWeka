@@ -1,4 +1,4 @@
-<b>Download Executable Jar<b><br>
+<b>Download Executable Jar (MLTextClassifier.zip)<b><br>
  http://teamhaircut.org/#downloads 
 
 <b>Dependencies:</b> weka-src.jar, weka.jar <br>
