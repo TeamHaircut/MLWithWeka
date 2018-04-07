@@ -32,7 +32,6 @@ public class TextClassifierController {
     
     @FXML
     private void classifyBTNAction() {
-    	System.out.println("Button Pressed");
     	PrintWriter out = null;
         String input = textTA.getText();
         try {
@@ -49,7 +48,6 @@ public class TextClassifierController {
 
         Classify classifier = new Classify();
         classifier.loadModel(textClassifierModel.getModel());
-        System.out.println("using model: "+ textClassifierModel.getModel());
         classifier.classify("output.arff");
 
         classifier.printTestClasses();
@@ -85,7 +83,6 @@ public class TextClassifierController {
             
             modelCB.getSelectionModel().selectedItemProperty().addListener((observable, oldValue, newValue) -> {
             	textClassifierModel.setCBSelection(newValue);
-		    	System.out.println(newValue+" selected");
 		    });
     		
     	}
