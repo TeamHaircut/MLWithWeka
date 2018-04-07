@@ -1,27 +1,25 @@
 package controllers;
 
+import java.io.File;
 import java.io.FileNotFoundException;
 import java.io.PrintWriter;
 import java.io.UnsupportedEncodingException;
-import java.util.HashMap;
-import java.util.Map;
 
 import supportclasses.Classify;
 import supportclasses.ToArff;
-import javafx.collections.ObservableList;
-import javafx.event.ActionEvent;
-import javafx.event.EventHandler;
 import javafx.fxml.FXML;
 import javafx.scene.control.Button;
 import javafx.scene.control.ComboBox;
 import javafx.scene.control.TextArea;
 import javafx.scene.control.TextField;
 import javafx.stage.FileChooser;
+import javafx.stage.Stage;
 import models.TextClassifierModel;
 
 public class TextClassifierController {
 	
 	public static TextClassifierModel textClassifierModel = new TextClassifierModel();
+	public static Stage stage;
 	
 	@FXML private FileChooser fileChooser = new FileChooser();
     @FXML private ComboBox<String> modelCB = new ComboBox<>();
@@ -64,8 +62,21 @@ public class TextClassifierController {
     	outputTF.setText("");
     	fileTF.setText("");
     }
+    
+    @FXML
+    private void fileBTNAction() {
+    	File file = fileChooser.showOpenDialog(stage);
+        FileChooser.ExtensionFilter extFilter = new FileChooser.ExtensionFilter("TXT", "*.txt");
+        fileChooser.getExtensionFilters().add(extFilter);
+        if (file != null) {
+        	
+        	fileTF.setText(file.getPath());
+        	ToArff toArff1 = new ToArff(file.getPath());
+        	textTA.setText(toArff1.getText());
+        }
+    }
+    
 
-	
     @FXML void initialize(){
     	if(modelCB != null) {
     		
