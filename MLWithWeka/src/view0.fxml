@@ -39,7 +39,7 @@
          <children>
             <Label text="Classification" />
             <TextField fx:id="outputTF" prefWidth="300.0" />
-            <Button fx:id="resetBTN" mnemonicParsing="false" text="Reset" />
+            <Button fx:id="resetBTN" mnemonicParsing="false" onAction="#resetBTNAction" text="Reset" />
          </children>
       </HBox>
    </children>
