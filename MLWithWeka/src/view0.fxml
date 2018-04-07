@@ -20,8 +20,8 @@
             <TextArea fx:id="textTA" maxHeight="1200.0" maxWidth="1200.0" minHeight="200.0" minWidth="568.0" />
             <HBox alignment="CENTER_RIGHT" prefHeight="100.0" prefWidth="200.0" spacing="15.0">
                <children>
-                  <TextField fx:id="fileTF" promptText="choose a file" />
-                  <Button fx:id="fileBTN" mnemonicParsing="false" text=". . ." />
+                  <TextField fx:id="fileTF" prefWidth="300.0" promptText="choose a file" />
+                  <Button fx:id="fileBTN" mnemonicParsing="false" onAction="#fileBTNAction" text=". . ." />
                </children>
                <VBox.margin>
                   <Insets bottom="5.0" top="5.0" />
