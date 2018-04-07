@@ -9,6 +9,8 @@ import java.util.Map;
 import supportclasses.Classify;
 import supportclasses.ToArff;
 import javafx.collections.ObservableList;
+import javafx.event.ActionEvent;
+import javafx.event.EventHandler;
 import javafx.fxml.FXML;
 import javafx.scene.control.Button;
 import javafx.scene.control.ComboBox;
@@ -55,6 +57,14 @@ public class TextClassifierController {
         classifier.printTestClasses();
         outputTF.setText(classifier.classificationsAsString());
     }
+    
+    @FXML
+    private void resetBTNAction() {
+    	textTA.setText("");
+    	outputTF.setText("");
+    	fileTF.setText("");
+    }
+
 	
     @FXML void initialize(){
     	if(modelCB != null) {
