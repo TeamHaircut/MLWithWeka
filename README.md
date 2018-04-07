@@ -1,4 +1,4 @@
-<b>Download Executable Jar<b>
+<b>Download Executable Jar<b><br>
  http://teamhaircut.org/#downloads 
 
 <b>Dependencies:</b> weka-src.jar, weka.jar <br>
