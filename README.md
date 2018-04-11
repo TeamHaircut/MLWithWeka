@@ -9,8 +9,10 @@ Append or upload news article content, and classify test example as either busin
 
 ![alt text](https://github.com/TeamHaircut/MLWithWeka/blob/master/MLWithWeka/src/res/demo0.png)
 <p align="center">Select prediction model from drop down<br><br></p>
+
 ![alt text](https://github.com/TeamHaircut/MLWithWeka/blob/master/MLWithWeka/src/res/demo1.png)
 <p align="center">Type, paste, or upload test article text<br><br></p>
+
 ![alt text](https://github.com/TeamHaircut/MLWithWeka/blob/master/MLWithWeka/src/res/demo2.png)
 <p align="center">Classify article content as business, entertainment, politics, sports, or tech<br><br></p>
 
